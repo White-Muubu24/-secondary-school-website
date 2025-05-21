@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>subjects</title>
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .subjects-offer{
+      background-image: url(./gallery/book.jpg);
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      
+    }
+
+    .subjects-offer h1{
+      color: orangered;
+      
+
+    }
+
+    .footer-content{
+      background-color: black;
+      color: aliceblue;
+      text-align: center;
+    }
+
+    @media  screen and (max-width: 700px) {
+      
+
+      
+      
+    }
+  </style>
+</head>
+<body>
+  
+<!-- Header Section -->
+<div class="main-menu">
+  
+
+  
+  <!-- Navigation -->
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="About us.html">ABOUT US</a></li>
+      <li><a href="Admissions.html">ADMISSIONS</a></li>
+      <li><a href="Certificate.html">CERTIFICATES</a></li>
+      <li><a href="Contact.html">CONTACTS</a></li>
+    </ul>
+  </div>
+
+ <header class="header-main">
+  <div class="header-main-logo">
+    <img src="photos d/badge.png" alt="School Logo">
+
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-icon" id="menu-icon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+    
+
+    <!-- Navigation -->
+    <nav class="header-main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About us.html">ABOUT US</a></li>
+        <li><a href="Admissions.html">ADMISSIONS</a></li>
+        <li><a href="Certificate.html">CERTIFICATES</a></li>
+        <li><a href="Contact.html">CONTACTS</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+<!--About us content-->
+<section class="subjects-offer">
+  <div class="sub-page" style="height: 45vh;">
+    <h1 style="display: flex; justify-content: center; align-items: center; height: 50vh;">Our subjects</h1>
+    <div>
+  
+<!--subjects we offer--> 
+      <section class="subjects">
+        <h1>subjects we offer</h1>
+        <p>We provide a diverse range of subjects designed to meet the interest and goals of all pupils. whether you're passionate about siences, the arts, or business, our curriculum supports both academic excellence and personal growth. Explore our subjects areas to find out what inspires you.</p>
+  
+      <div class="row">
+          <div class="subject-col">
+            <h3>pure sciences</h3>
+            <p>Our Pure Sciences program includes Physics, Chemistry, and Biology. Pupils develop a strong foundation in scientific principles, critical thinking, and practical laboratory skills.</p> 
+          </div> 
+          <div class="subject-col">
+            <h3>Art & Music</h3>
+            <p>This program nurtures creativity and self-expression through visual arts, music theory, and perfomance. Pupils Explore various techniques, instruments, and artistic styles, prepsring them for creative industries or personal enrichment.</p> 
+          </div> 
+          <div class="subject-col">
+            <h3>Accounts</h3>
+            <p>Our Accounts program introduces pupils to the basics/fundamentals of financial literacy, bookkeeping, and business principles. It lays the groundwork for careers in accounting, business managent, and enterpreneuship.</p> 
+          </div>  
+      </div>
+    </section>
+
+    <!--Our facilities-->
+    <section class="facilities">
+      <h1>Our facilities</h1>
+  <p>Our well-stocked library is a quiet and resourceful space that encourages reading, research, and independent learning. It offers a wide selection of books, reference materials, educational magazines, and digital resources. Pupils can access computers for academic use, and our liberian is always available to assist with research and book selection.</p>
+  
+  <div class="row">
+    <div class="facilities-col">
+      <img src="/gallery/jazz.jpg" alt="">
+      <h3>Art and Music</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="/gallery/pure-sci.jpg" alt="">
+      <h3>Pure science lab</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div><div class="facilities-col">
+      <img src="./gallery/computer-lab.jpg.jpg" alt="">
+      <h3>Computer lab</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  
+  </section>
+  
+  <footer>
+    <div class="footer-content">
+    <div class="footer-left">
+      <h2>Mumbwa High School</h2>
+      <p>Empowering pupils for a brighter future</p>
+    </div>
+
+    
+
+
+
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const mainNav = document.getElementById('main-nav');
+
+  // menuIcon.addEventListener('click', () => {
+  //   mainNav.classList.toggle('active');
+  // });
+
+  let state = false;
+  let mobileNav = document.getElementById("mobile-nav");
+  menuIcon.addEventListener("click", ()=>{
+    if(state){
+      mobileNav.style.display = "none";
+      state = false;
+    }else{
+      mobileNav.style.display = "block";
+      state = true;
+    }
+  });
+  </script>
+</body>
+</html>

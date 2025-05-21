@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificate Access - Mumbwa High School</title>
+  
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="Admissions.html">
+  <link rel="stylesheet" href="Certificate.html">
+  <link rel="stylesheet" href="About us.html">
+  <link rel="stylesheet" href="index.css">
+  <style>
+
+    *{
+      overflow: hidden;
+    }
+.certificate-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  justify-items: center;
+  background-image: url(./gallery/grad.jpg);
+  width: 100vw;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: 60px;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #004080;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: #004080;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #003366;
+}
+
+.certificate-info {
+  display: none;
+  margin-top: 25px;
+  background-color: #e7f9e9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #b6e3b8;
+  color: #2e7d32;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+footer{
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  padding-bottom: 20px;
+  bottom: 0px;
+  margin-top: 3rem;
+  background-color: black;
+  color: aliceblue;
+  height: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px){
+  .form-wrapper {
+  max-width: 450px;
+  background: white;
+  padding: 40px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: 160px;
+  margin-right: 40px;
+  
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+   
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="About us.html">ABOUT US</a></li>
+      <li><a href="Admissions.html">ADMISSIONS</a></li>
+      <li><a href="Certificate.html">CERTIFICATES</a></li>
+      <li><a href="Contact.html">CONTACTS</a></li>
+    </ul>
+  </div>
+
+    <!-- Header Section  -->
+    <header class="header-main">
+      <div class="header-main-logo">
+        <img src="photos d/badge.png" alt="School Logo">
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" id="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- Navigation -->
+        <nav class="header-main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">ABOUT US</a></li>
+            <li><a href="Admissions.html">ADMISSIONS</a></li>
+            <li><a href="Certificate.html">CERTIFICATES</a></li>
+            <li><a href="Contact.html">CONTACTS</a></li>
+          </ul>
+        </nav>
+
+        
+    
+
+    </header>
+  <main>
+    <section class="certificate-section">
+      <div class="form-wrapper">
+        <h2>Get Your Certificate</h2>
+        <form id="certificateForm">
+          <div class="form-group">
+            <label for="admissionNumber">Admission Number</label>
+            <input type="text" id="admissionNumber" name="admissionNumber" required />
+          </div>
+          <button type="submit" class="submit-btn">Access Certificate</button>
+        </form>
+
+        <div id="certificateSection" class="certificate-info">
+          <p><strong>Certificate for:</strong> <span id="studentName">John Doe</span></p>
+          <p><strong>Status:</strong> Verified</p>
+          <a href="#" class="download-btn">Download Certificate (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Secondary School. All rights reserved.</p>
+  </footer>
+
+  <script src="certificate-script.js"></script>
+</body>
+
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const mainNav = document.getElementById('main-nav');
+
+  let state = false;
+  let mobileNav = document.getElementById("mobile-nav");
+  menuIcon.addEventListener("click", ()=>{
+    if(state){
+      mobileNav.style.display = "none";
+      state = false;
+    }else{
+      mobileNav.style.display = "block";
+      state = true;
+    }
+  });
+
+</script>
+
+
+</html>

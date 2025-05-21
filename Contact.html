@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="Admissions.html">
+  <link rel="stylesheet" href="Certificate.html">
+  <link rel="stylesheet" href="About us.html">
+  <link rel="stylesheet" href="index.css">
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .form-container{
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.938); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    border-radius: 10px;
+
+  }
+
+  h1{
+    text-align: center;
+    color: orange;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  input, textarea{
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  button{
+    padding: 10px;
+    background-color:aliceblue;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: orangered;
+    color: aliceblue;
+  }
+
+  .info{
+    margin: 20px 0;
+    line-height: 1.6;
+    color: whitesmoke;
+    
+  }
+
+  .social-icons{
+    margin-right: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 0;
+    flex-basis: 5%;
+  }
+
+  .footer
+  {
+    background: black;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header Section -->
+<div class="main-menu">
+  
+  <!-- Navigation -->
+   
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="About us.html">ABOUT US</a></li>
+      <li><a href="Admissions.html">ADMISSIONS</a></li>
+      <li><a href="Certificate.html">CERTIFICATES</a></li>
+      <li><a href="Contact.html">CONTACTS</a></li>
+    </ul>
+  </div>
+
+  <header class="header-main">
+    <div class="header-main-logo">
+      <img src="photos d/badge.png" alt="School Logo">
+  
+      <!-- Hamburger Menu Icon -->
+      <div class="menu-icon" id="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      
+  
+      <!-- Navigation -->
+      <nav class="header-main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="About us.html">ABOUT US</a></li>
+          <li><a href="Admissions.html">ADMISSIONS</a></li>
+          <li><a href="Certificate.html">CERTIFICATES</a></li>
+          <li><a href="Contact.html">CONTACTS</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <!--contact form-->
+
+<div class="form-container">
+  <h1>Contact Us</h1>
+ 
+
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br><br>
+      <input type="email" placeholder="Your Email" required> <br><br><br>
+      <input type="tel" placeholder="Phone Number" required><br><br><br>
+      <textarea rows="5" placeholder="Your Message"></textarea><br><br>
+      <button type="submit">Send message</button>
+    </form>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+<div class="info">
+  <strong>Address:</strong> 123 main road, Mumbwa <br>
+  <strong>Phone:</strong> +260 9733 087 71 <br>
+  <strong>Email:</strong> info@Mumbwahighschool.edu.zm <br>
+  <strong>Office Hours:</strong> Mon - Fri: 08:00 - 04:00 PM
+  </div>
+<div class="info">
+  <p>Follow us:</p>
+  <a href="#">Facebook</a> <br>
+  <a href="#">WhatsApp</a><br>
+  <a href="#">Instagram</a>
+</div>
+<div class="info">
+  <p>Useful Links:</p>
+  <a href="#">About</a> <br>
+  <a href="#">FAQ</a><br>
+  <a href="#">Privacy</a>
+</div>
+</div>
+
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+  const mainNav = document.getElementById('main-nav');
+
+  // menuIcon.addEventListener('click', () => {
+  //   mainNav.classList.toggle('active');
+  // });
+
+  let state = false;
+  let mobileNav = document.getElementById("mobile-nav");
+  menuIcon.addEventListener("click", ()=>{
+    if(state){
+      mobileNav.style.display = "none";
+      state = false;
+    }else{
+      mobileNav.style.display = "block";
+      state = true;
+    }
+  })
+  </script>
+</body>
+</html>

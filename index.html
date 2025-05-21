@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondary School Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Certificate.html">
+    <link rel="stylesheet" href="Admissions.html">
+    <link rel="stylesheet" href="About us.html">
+</head>
+<body>
+<!-- Header Section -->
+<div class="main-menu">
+  
+
+  
+      <!-- Navigation -->
+   
+      <div class="mobile-nav" id="mobile-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="About us.html">ABOUT US</a></li>
+          <li><a href="Admissions.html">ADMISSIONS</a></li>
+          <li><a href="Certificate.html">CERTIFICATES</a></li>
+          <li><a href="Contact.html">CONTACTS</a></li>
+        </ul>
+      </div>
+
+     <header class="header-main">
+      <div class="header-main-logo">
+        <img src="photos d/badge.png" alt="School Logo">
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" id="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
+        
+    
+        <!-- Navigation -->
+        <nav class="header-main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">ABOUT US</a></li>
+            <li><a href="Admissions.html">ADMISSIONS</a></li>
+            <li><a href="Certificate.html">CERTIFICATES</a></li>
+            <li><a href="Contact.html">CONTACTS</a></li>
+          </ul>
+        </nav> 
+        
+      </div>
+    </header>
+
+
+  <section class="hero-section">
+   
+      
+    <h1>We Ensure A Better Education For A Better World</h1>
+    <div class="apply-btn">
+      <a href="Admissions.html" class="cta-button">Apply Now</a>
+    </div>
+
+ 
+  </section>
+
+  <section class="subjects">
+      <h1>subjects we offer</h1>
+      <p>We provide a diverse range of subjects designed to meet the interest and goals of all pupils. whether you're passionate about siences, the arts, or business, our curriculum supports both academic excellence and personal growth. Explore our subjects areas to find out what inspires you.</p>
+
+    <div class="row">
+        <div class="subject-col">
+          <h3>pure sciences</h3>
+          <p>Our Pure Sciences program includes Physics, Chemistry, and Biology. Pupils develop a strong foundation in scientific principles, critical thinking, and practical laboratory skills.</p> 
+        </div> 
+        <div class="subject-col">
+          <h3>Art & Music</h3>
+          <p>This program nurtures creativity and self-expression through visual arts, music theory, and perfomance. Pupils Explore various techniques, instruments, and artistic styles, preparing them for creativity.</p> 
+        </div> 
+        <div class="subject-col">
+          <h3>Accounts</h3>
+          <p>Our Accounts program introduces pupils to the basics/fundamentals of financial literacy, bookkeeping, and business principles. It lays the groundwork for careers in accounting, business managent, and enterpreneuship.</p> 
+        </div>  
+    </div>
+  </section>
+
+  <!--school-->
+  <section class="campus">
+    <h1>Our Local school</h1>
+    <p>Our school is a vibrant, pupil-centered learning community commited to academic excellence and character development. Located in the heart of our community, we provide a safe and supportive environment where pupils grow intellectually, socially, and emotionaly. With dedicated teachers, we provide learners for succes in school and beyond.</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="./gallery/pexels-barkali-340353352-32006325.jpg" alt="">
+        
+      </div>
+      <div class="campus-col">
+        <img src="./gallery/pexels-davegarcia-31056504.jpg" alt="">
+        
+      </div><div class="campus-col">
+        <img src="./gallery/sch (2).jpg" alt="">
+      
+      </div>
+    </div>
+  </section>
+
+  <section class="facilities">
+    <h1>Our facilities</h1>
+<p>Our well-stocked library is a quiet and resourceful space that encourages reading, research, and independent learning. It offers a wide selection of books, reference materials, educational magazines, and digital resources. Pupils can access computers for academic use, and our liberian is always available to assist with research and book selection.</p>
+
+<div class="row">
+  <div class="facilities-col">
+    <img src="./gallery/jazz.jpg" alt="">
+    <h3>Art and Music</h3>
+    
+  </div>
+  <div class="facilities-col">
+    <img src="./gallery/pure-sci.jpg" alt="">
+    <h3>Pure science lab</h3>
+  
+  </div><div class="facilities-col">
+    <img src="./gallery/computer-lab.jpg.jpg" alt="">
+    <h3>Computer lab</h3>
+    
+  </div>
+</div>
+
+</section>
+
+<!--footer-->
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>Mumbwa Secondary School is committed to academic excellence, discipline, and developing future leaders. We provide quality education and a nurturing environment for all learners.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>123 Education Lane, Mumbwa, Zambia</p>
+      <p>Email: Mumbwahighschool.edu.zm</p>
+      <p>Phone: +260 973 308 771</p>
+      <p>Office Hours: Mon - Fri, 8:00 AM - 4:00 PM</p>
+    </div>
+
+   
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mumbwa High School. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+    
+</body>
+
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const mainNav = document.getElementById('main-nav');
+
+  let state = false;
+  let mobileNav = document.getElementById("mobile-nav");
+  menuIcon.addEventListener("click", ()=>{
+    if(state){
+      mobileNav.style.display = "none";
+      state = false;
+    }else{
+      mobileNav.style.display = "block";
+      state = true;
+    }
+  });
+</script>
+
+</html>

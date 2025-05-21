@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admissions - My Secondary School</title>
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="Admissions.html">
+  <link rel="stylesheet" href="Certificates.html">
+ 
+  <style>
+    *{
+      overflow: hiden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+  max-width: 350px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #004080;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #003060;
+}
+
+.application h2{
+
+  text-align: center;
+  margin-bottom: 40px;
+  color: aliceblue;
+  
+}
+
+.application{
+  width: 100%;
+  background-image: url(./gallery/pexels-polina-zimmerman-3747486.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  height: 50px;
+  border-radius: ;
+  color: aliceblue;
+  
+}
+
+.application h2{
+  color: #004080;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+  text-align: center;
+  background-color: black;
+  height: 50px;
+  border-radius: px;
+  height: 60px;
+  color: aliceblue;
+  margin-top: 50px;
+  
+}
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="main-menu">
+
+    <!-- Navigation -->
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="About us.html">ABOUT US</a></li>
+      <li><a href="Admissions.html">ADMISSIONS</a></li>
+      <li><a href="Certificate.html">CERTIFICATES</a></li>
+      <li><a href="Contact.html">CONTACTS</a></li>
+    </ul>
+  </div>
+
+
+
+    <!-- Header Section  -->
+    <header class="header-main">
+      <div class="header-main-logo">
+        <img src="photos d/badge.png" alt="School Logo">
+
+        
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" id="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="header-main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">ABOUT US</a></li>
+            <li><a href="Admissions.html">ADMISSIONS</a></li>
+            <li><a href="Certificate.html">CERTIFICATES</a></li>
+            <li><a href="Contact.html">CONTACTS</a></li>
+          </ul>
+        </nav>
+    
+        <!-- Navigation -->
+        <!--<nav class="header-main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">ABOUT US</a></li>
+            <li><a href="Admissions.html">ADMISSIONS</a></li>
+            <li><a href="Certificate.html">CERTIFICATES</a></li>
+            <li><a href="Contact.html">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </div>-->
+    </header>
+
+  <main>
+    <section class="application">
+      <h2>Apply for Grade Advancement</h2>
+
+      <div class="form-container">
+        <form id="admissionForm">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+
+          <label for="grade">Applying for:</label>
+          <select id="grade" name="grade" required>
+            <option value="">-- Select Grade --</option>
+            <option value="7to8">Grade 7 to 8</option>
+            <option value="9to10">Grade 9 to 10</option>
+          </select>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="previousSchool">Previous School:</label>
+          <input type="text" id="previousSchool" name="previousSchool" required>
+
+          <label for="results">Upload Results:</label>
+          <input type="file" id="results" name="results" accept=".pdf,.jpg,.png" required>
+
+          <button type="submit">Submit Application</button>
+        </form>
+
+        <div id="confirmation" style="display:none; margin-top: 20px; color: green;">
+          Your application has been submitted successfully!
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Secondary School. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">
+
+  </script>
+</body>
+
+<script>
+
+const menuIcon = document.getElementById('menu-icon');
+  const mainNav = document.getElementById('main-nav');
+
+  let state = false;
+  let mobileNav = document.getElementById("mobile-nav");
+  menuIcon.addEventListener("click", ()=>{
+    if(state){
+      mobileNav.style.display = "none";
+      state = false;
+    }else{
+      mobileNav.style.display = "block";
+      state = true;
+    }
+  });
+  
+</script>
+
+</html>
